@@ -312,5 +312,19 @@
             "}"
         ],
         "description" : "Add return to Action Window Close"
+    },
+    "odoo_return_acticlient_notification" :{
+        "prefix": "oret_act_notification",
+        "body": [
+            "return {",
+                "\t'type': 'ir.actions.client',",
+                "\t'tag': 'display_notification',",
+                "\t'params': {",
+                "\t\t'title': ${1},",
+                "\t\t'message': ${2},",
+                "\t\t'type': ${3},",
+                "\t}",
+            "}"
+        ]
     }
 }
